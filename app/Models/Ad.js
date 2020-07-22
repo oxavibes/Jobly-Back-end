@@ -4,11 +4,11 @@
 const Model = use('Model')
 
 class Ad extends Model {
-  users() {
+  users () {
     return this.belongsToMany('App/Models/User').pivotTable('user_role')
   }
 
-  job() {
+  job () {
     return this.hasOne('App/Models/Job')
   }
 }

@@ -15,9 +15,9 @@ const Factory = use('Factory')
 
 class RoleSeeder {
   async run () {
-    await Factory.model('App/Models/Role').create({ name: 'Candidate'})
-    await Factory.model('App/Models/Role').create({ name: 'Employer'})
-    await Factory.model('App/Models/Role').create({ name: 'Administrator'})
+    await Factory.model('App/Models/Role').create({ name: 'Candidate' })
+    await Factory.model('App/Models/Role').create({ name: 'Employer' })
+    await Factory.model('App/Models/Role').create({ name: 'Administrator' })
   }
 }
 

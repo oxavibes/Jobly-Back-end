@@ -1,19 +1,18 @@
 'use strict'
 
 class StoreUser {
-
-  get validateAll() {
+  get validateAll () {
     return true
   }
 
-  get sanitizationRules() {
+  get sanitizationRules () {
     return {
       email: 'normalize_email',
       role_id: 'to_int'
     }
   }
 
-  get rules() {
+  get rules () {
     return {
       username: 'required|unique:users',
       email: 'required|email|unique:users',
@@ -22,7 +21,7 @@ class StoreUser {
     }
   }
 
-  get messages() {
+  get messages () {
     return {
       'email.required': 'You must provide a email address.',
       'email.email': 'You must provide a valid email address.',

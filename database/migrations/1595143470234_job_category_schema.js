@@ -13,7 +13,7 @@ class JobCategorySchema extends Schema {
 
       table.foreign('job_id').references('id').inTable('jobs')
       table.foreign('category_id').references('id').inTable('categories')
-      
+
       table.timestamps()
     })
   }

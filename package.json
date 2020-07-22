@@ -6,7 +6,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "test": "node ace test"
+    "test": "node ace test",
+    "dev": "adonis serve --dev",
+    "lint": "eslint --ignore-path .gitignore ."
   },
   "keywords": [
     "adonisjs",
@@ -27,7 +29,14 @@
     "@adonisjs/validator": "^5.0.6",
     "mysql": "^2.18.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^7.5.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  },
   "autoload": {
     "App": "./app"
   }

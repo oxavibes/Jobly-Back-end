@@ -4,12 +4,11 @@
 const Model = use('Model')
 
 class Job extends Model {
-
-  categories() {
+  categories () {
     return this.belongsToMany('App/Models/Category').pivotTable('job_category')
   }
 
-  ad() {
+  ad () {
     return this.belongsTo('App/Models/Ad')
   }
 }
