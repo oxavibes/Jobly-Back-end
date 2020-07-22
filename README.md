@@ -1,4 +1,4 @@
-# Jobly API application
+# Jobly API
 
 ## Setup
 
